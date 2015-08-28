@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+	<title>SVG Sandbox</title>
+	<script src="js/d3.js"></script>
+</head>
+<body>
+	<div id="vis"></div>
+	<script>
+	var svgWidth = 1000
+	var svgHeight = 600
+
+	var svg = d3.select("#vis")
+			.append("svg")
+		//.attr("xmlns", "http://www.w3.org/2000/svg")
+			.attr("viewBox", "0 0 "+svgWidth+" "+svgHeight)
+
+	svg.append("rect")
+			.attr("x", 0).attr("y", 0).attr("width", "50%").attr("height", "50%")
+			.style({fill: "#f00", "fill-opacity": 0.2})
+
+	</script>
+</body>
+</html>
